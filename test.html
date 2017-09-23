@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+      $("#head").load("test2.html", null, function() {$('#hoge').text('Guten Tag');});
+    });
+    </script>
+    <title>jQuery</title>
+  </head>
+  <body>
+    <div id="head"></div>
+    <div id="head2">HELLO</div>
+  </body>
+</html>
